@@ -36,16 +36,15 @@ function mettreAJourCarousel(direction) {
 
 	if (direction === 'droite') {
 		indiceActuel = (indiceActuel + 1);
+		if (indiceActuel > slides.length - 1) {
+			indiceActuel = 0;
+		}
+
 	}else if (direction === 'gauche') {
 		indiceActuel = (indiceActuel - 1);
-	}
-
-	if (indiceActuel < 0) {
-		indiceActuel = slides.length - 1;
-	}
-
-	if (indiceActuel > slides.length - 1) {
-		indiceActuel = 0;
+		if (indiceActuel < 0) {
+			indiceActuel = slides.length - 1;
+		}
 	}
 
 	const imageCarousel = document.querySelector(".banner-img");
