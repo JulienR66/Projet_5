@@ -44,7 +44,7 @@ function mettreAJourCarousel(direction) {
 		indiceActuel = slides.length - 1;
 	}
 
-	if (indiceActuel > slides.length) {
+	if (indiceActuel > slides.length - 1) {
 		indiceActuel = 0;
 	}
 
