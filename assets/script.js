@@ -39,7 +39,6 @@ function mettreAJourCarousel(direction) {
 		if (indiceActuel > slides.length - 1) {
 			indiceActuel = 0;
 		}
-
 	}else if (direction === 'gauche') {
 		indiceActuel = (indiceActuel - 1);
 		if (indiceActuel < 0) {
@@ -62,7 +61,4 @@ function mettreAJourCarousel(direction) {
 			dots[i].classList.remove("dot_selected");
 		}
 	}
-	
-	console.log("après", indiceActuel)
-
 }
